@@ -11,8 +11,6 @@ const products = [
     for(const item of arr){
         if(item[prop] !== undefined){
             newArray.push(item[prop]);
-        }else{
-            newArray = [];
         }
     }
     return newArray;
@@ -25,4 +23,4 @@ const products = [
   
 //   console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
   
-  console.log(getAllPropValues(products, 'category')); // [
+//   console.log(getAllPropValues(products, 'category')); // []
